@@ -135,7 +135,7 @@
     </div>
     <div class="topnav" style="font-size:25px;font-family:Annie Use Your Telescope;text-decoration: none">
     <a class="active" href="index.php"><i class="fa fa-home"></i></a>
-    <a href="">Book Control</a>
+    <a href="list.php">Book Control</a>
     <a href="usercontrol.php">User Control</a>
   </div>
 
