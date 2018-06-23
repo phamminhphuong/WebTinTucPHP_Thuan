@@ -9,7 +9,7 @@ if(isset($_POST['search'])) {
 	}else{
 		$sql = "SELECT * FROM book WHERE b_name LIKE '%$key%'";
 		$result = mysqli_query($conn,$sql);
-		
+		$search = mysqli_fetch_all($result, MYSQLI_ASSOC);
 	}
 }
 	?>
@@ -25,32 +25,23 @@ if(isset($_POST['search'])) {
 				<div class="panel panel-danger">
 					<div class="panel-heading" style="text-align: center">
 						<h1>
-							<b>Search books <?php echo $key?></b>
+							<b>Search books
+								<?php echo $key?>
+							</b>
 						</h1>
 					</div>
 					<div class="panel-body">
-						<?php
-						while ($post = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
-								echo "
-								<div class='row'>
-									<div class='col-md-3'>"<img src="sr" alt="">
-									.$post['b_img']."</div>
+
+						<div class="row">
+							<?php
+							 foreach ($search as $sea => $value) { ?>
+								<div class="col-sm-3">
+									<a href="detail.php?id=<?php echo $value['b_id']?>">
+										<img src="images/<?php echo $value['b_img']; ?>" style="width:100px;height:170px">
+									</a>
 								</div>
-								";
-							}
-							// echo "<tr><td>".$post["b_id"]."</td><td>".$post["b_name"]."</td></tr>";
-							// echo "
-							// 	<div class='row'>
-							// 		<div class='col-md-3'>aa</div>
-							// 	</div>";
-						
-					
-						?>
-						<!-- <div class="row">
-							<div class="col-md-3">aa</div>
-							<div class="col-md-3">aa</div>
-							<div class="col-md-3">aa</div>
-						</div> -->
+								<?php } ?>
+						</div>
 					</div>
 				</div>
 			</div>

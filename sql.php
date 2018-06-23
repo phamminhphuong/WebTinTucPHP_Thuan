@@ -4,6 +4,10 @@ require 'connect.php';
 $Favorite = "SELECT b_id,b_name,b_img FROM `book` WHERE 'b_date'=DATE(2018-01-13) limit 8";
 $res_best = mysqli_query($conn, $Favorite);
 $res_best = mysqli_fetch_all($res_best, MYSQLI_ASSOC);
+// tim kiem
+$Search = "SELECT b_img FROM `book` WHERE 'b_date'=DATE(2018-01-13) limit 8";
+$res_best = mysqli_query($conn, $Favorite);
+$res_best = mysqli_fetch_all($res_best, MYSQLI_ASSOC);
 
 $index_ForeignLanguage = "SELECT b_id,b_name,b_img FROM `book` WHERE cate_id='A' limit 4";
 $res_ForeignLanguage = mysqli_query($conn, $index_ForeignLanguage);
