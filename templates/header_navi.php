@@ -80,6 +80,7 @@
     #searchId {
       width: 200px;
       padding-left: 10px;
+      border: 1px solid grey;
     }
 
     #searchId {
@@ -95,8 +96,16 @@
     #btnSearch{
       width:50px;
       height:40px;
-      margin-left:-8px;
-      margin-top:-14px;
+      
+      display: inline;
+      /* margin-top: -10px !important; */
+      border-radius:  4px;
+      background: white;
+      border: 1px solid grey;
+      margin-top: -20px;
+      top:-8;
+      position:absolute;
+
     }
     div.jum {
       font-family: Delius!important;
@@ -114,9 +123,11 @@
   <div class="search" style="font-family: Delius">
     <form action="search.php" method="POST">
       <input id="searchId" type="text" placeholder="Search..." size="15" style="font-size:25px" name="key">&nbsp;
-      <button id="btnSearch" type="submit" name="search">
-        <i class="fa fa-search"></i>
-      </button>
+      <div  style="display:inline-block; position:relative">
+        <button id="btnSearch" type="submit" name="search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
     </form>
   </div>
   </did>
