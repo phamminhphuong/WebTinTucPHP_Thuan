@@ -92,7 +92,7 @@
           <label for id="email">Email</label>
           <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-            <input id="user_email" type="text" class="form-control" name="user_email" placeholder="Email" style="font-size: 15px">
+            <input id="user_email" type="email" class="form-control" name="user_email" placeholder="Email" style="font-size: 15px">
           </div>
           <br>
 
@@ -140,16 +140,16 @@
             else{
                 $sql = "SELECT * FROM user WHERE user_email = '$email' and `user_password`='$pass'";
                 $result = mysqli_query($conn,$sql);
-				if (mysqli_num_rows($result) > 0){
-          echo "<script>document.location='index.php';alert('Username was available');</script>";
-        }
-        else{
-                    $sql = "INSERT INTO user(user_email, user_password, username, user_address, user_phone) VALUES ('$email', '$pass', '$username', '$address','$phone')";
-                    mysqli_query($conn, $sql);
-                    echo "<script>document.location='index.php';alert('Sign Up successfully');</script>";
+                if (mysqli_num_rows($result) > 0){
+                  echo "<script>document.location='index.php';alert('Username was available');</script>";
                 }
-            }
-        }
+                else{
+                            $sql = "INSERT INTO user(user_email, user_password, username, user_address, user_phone) VALUES ('$email', '$pass', '$username', '$address','$phone')";
+                            mysqli_query($conn, $sql);
+                            echo "<script>document.location='index.php';alert('Sign Up successfully');</script>";
+                        }
+                    }
+                }
             
 ?>
 
