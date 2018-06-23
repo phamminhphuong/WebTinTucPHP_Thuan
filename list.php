@@ -162,7 +162,7 @@
       <td><?= $value['b_name'];?></td>
       <td><?= $value['b_des'];?></td>
       <td style="text-align: center;"><a href="delete.php?id=<?php echo $value['b_id']; ?>" id="delete" class="btn btn-danger" onClick="return confirm('Do your want to delete this book?')"><i class="fa fa-close"></i>&nbsp;Delete</a></td>
-      <td style="text-align: center;"><a href="editUser.php?id=<?php echo $value['user_id']; ?>" id="edit" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;Edit</a></td>
+      <td style="text-align: center;"><a href="editBook.php?id=<?php echo $value['b_id']; ?>" id="edit" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;Edit</a></td>
     </tr>
     <?php
       }
