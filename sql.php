@@ -52,3 +52,8 @@ if (isset($_GET['id'])) {
 $user_sql = "SELECT * FROM user";
 $user_query = mysqli_query($conn, $user_sql);
 $user = $user_query->fetch_all(MYSQLI_ASSOC);
+
+
+$cate_sql = "SELECT * FROM category";
+$cate_query = mysqli_query($conn, $cate_sql);
+$cate = mysqli_fetch_all($cate_query, MYSQLI_ASSOC);

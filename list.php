@@ -142,7 +142,7 @@
   </br>
     <div class = "Encyclopedias_list">
     <h1 align="center" class=" content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Encyclopedias</h1>
-    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
+    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php?cate_id=P'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
     </br>
     <table class="table table-striped">
       <thead>
@@ -174,7 +174,7 @@
 </br>
     <div class = "Foreign Language_list">
     <h1 align="center" class=" content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Foreign Language</h1>
-    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
+    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php?cate_id=A'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
     </br>
     <table class="table table-striped">
       <thead>
@@ -206,7 +206,7 @@
   </br>
     <div class = "Specialist press_list">
     <h1 align="center" class=" content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Specialist press</h1>
-    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
+    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php?cate_id=K'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
     </br>
     <table class="table table-striped">
       <thead>
@@ -238,7 +238,7 @@
   </br>
     <div class = "Sciencefiction_list">
     <h1 align="center" class=" content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Sciencefiction</h1>
-    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
+    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php?cate_id=V'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
     </br>
     <table class="table table-striped">
       <thead>
@@ -269,7 +269,7 @@
   </br>
   <div class = "Major_list">
     <h1 align="center" class=" content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Major</h1>
-    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
+    <div class="col-6"><button type="button" class="btn btn-success btn-lg float-right" onclick="window.location.href='addBook.php?cate_id=G'"><i class="fa fa-check-square-o"></i>&nbsp;Add Book</button></div>
     </br>
     <table class="table table-striped" >
       <thead>
