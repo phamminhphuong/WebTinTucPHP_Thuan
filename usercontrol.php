@@ -161,8 +161,8 @@
       <td><?= $value['user_email']?></td>
       <td><?= $value['user_phone']?></td>
       <td><?= $value['user_address']?></td>
-      <td style="text-align: center;"><a href="deleteUser.php?id=<?php echo $value['username']; ?>" id="delete" class="btn btn-danger" onClick="return confirm('Do your want to delete this user?')"><i class="fa fa-close"></i>&nbsp;Delete</a></td>
-      <td style="text-align: center;"><a href="editUser.php?id=<?php echo $value['username']; ?>" id="edit" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;Edit</a></td>
+      <td style="text-align: center;"><a href="deleteUser.php?id=<?php echo $value['id']; ?>" id="delete" class="btn btn-danger" onClick="return confirm('Do your want to delete this user?')"><i class="fa fa-close"></i>&nbsp;Delete</a></td>
+      <td style="text-align: center;"><a href="editUser.php?id=<?php echo $value['id']; ?>" id="edit" class="btn btn-primary"><i class="fa fa-edit"></i>&nbsp;Edit</a></td>
     </tr>
     <?php
       }

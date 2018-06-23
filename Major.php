@@ -24,15 +24,15 @@
             </a></div>
           <div class="panel-body" style="background-color:#F08080">
             <a href="detail.php?id=<?php echo $value['pro_id']?>">
-            <img src="<?php echo $value['b_img']; ?>" class="img-circle" style="width:100%"></a></div>
+            <img src="images/<?php echo $value['b_img']; ?>" class="img-circle" style="width:100%"></a></div>
       </div>
     </div>
     </div>
     <!-- Hien thi hang doc -->
     <div class="doc" style="display: none;" >
         <div class="col-sm-10" style="margin-left: 150px">
-      <div class="col-sm-5">
-      <img src="<?php echo $value['b_img']; ?>" class="img-circle" style="width:100%"></a>
+      <div class="col-sm-4">
+      <img src="images/<?php echo $value['b_img']; ?>" class="img-circle" style="width:100%"></a>
       </div>
 
       <div class="col-sm-5" style="text-align: left;margin-left: 50px">
