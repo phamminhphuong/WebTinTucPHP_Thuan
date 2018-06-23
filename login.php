@@ -129,7 +129,7 @@
   if ($row['role']==0) {
     echo "<script>alert('Wrong email or pasword');document.location='login.php'</script>";
   }
-  elseif ($row['role']== 1) {
+  elseif ($row['role']== '1') {
     $_SESSION['login_user'] = $row['user_email'];
     $_SESSION['user_role'] = $row['role'];
     echo"<script>document.location='index.php';alert('Log in successfully');</script>";

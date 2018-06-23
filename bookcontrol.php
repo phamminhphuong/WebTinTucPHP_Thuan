@@ -11,7 +11,7 @@
           echo "<script>alert('This is admin page!!!');document.location='index.php';</script>";
         }
       }else{
-        echo"<script>alert('This is admin page!!!');document.location='index.php';</script>";
+        echo"<script>document.location='list.php';</script>";
       }
 ?>
 <html>

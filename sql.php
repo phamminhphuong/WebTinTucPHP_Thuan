@@ -4,10 +4,6 @@ require 'connect.php';
 $Favorite = "SELECT b_id,b_name,b_img FROM `book` WHERE 'b_date'=DATE(2018-01-13) limit 8";
 $res_best = mysqli_query($conn, $Favorite);
 $res_best = mysqli_fetch_all($res_best, MYSQLI_ASSOC);
-// tim kiem
-$Search = "SELECT b_img FROM `book` WHERE 'b_date'=DATE(2018-01-13) limit 8";
-$res_best = mysqli_query($conn, $Favorite);
-$res_best = mysqli_fetch_all($res_best, MYSQLI_ASSOC);
 
 $index_ForeignLanguage = "SELECT b_id,b_name,b_img FROM `book` WHERE cate_id='A' limit 4";
 $res_ForeignLanguage = mysqli_query($conn, $index_ForeignLanguage);
@@ -48,16 +44,11 @@ $Major = mysqli_fetch_all($Major, MYSQLI_ASSOC);
 //Lưu biến id từ link truyền vào
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql_detail = "SELECT 'b_id', 'b_name', 'b_des','b_img','b_img1','b_img2','b_img3','b_img4' FROM 'book' WHERE 'b_id' = '$id'";
+    $sql_detail = "SELECT * FROM book WHERE b_id = '$id'";
     $detail = mysqli_query($conn, $sql_detail);
-    $detail = $detail->fetch_all(MYSQLI_ASSOC);
+    $detail = mysqli_fetch_assoc($detail);
 
 }
 $user_sql = "SELECT * FROM user";
 $user_query = mysqli_query($conn, $user_sql);
 $user = $user_query->fetch_all(MYSQLI_ASSOC);
-
-
-$cate_sql = "SELECT * FROM category";
-$cate_query = mysqli_query($conn, $cate_sql);
-$cate = mysqli_fetch_all($cate_query, MYSQLI_ASSOC);

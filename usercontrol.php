@@ -7,11 +7,11 @@
    //  echo $_SESSION['login_user']."|".$_SESSION['user_role'];
    // }
       if (isset($_SESSION['user_role'])) {
-        if ($_SESSION['user_role'] != '2') {
+        if ($_SESSION['user_role'] != '1') {
           echo "<script>alert('This is admin page!!!');document.location='index.php';</script>";
         }
       }else{
-        echo"<script>alert('This is admin page!!!');document.location='index.php';</script>";
+        echo"<script>document.location='list.php';</script>";
       }
 ?>
 <html>

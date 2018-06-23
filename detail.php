@@ -4,39 +4,32 @@
   include 'connect.php';
   include 'sql.php';
   ?>
-
+<div class="container">
+  <ul class="nav nav-tabs col-sm-5" style="margin-left: 100px;font-size: 20px">
+      <li><b>Tên sách: </b><?php echo $detail['b_name']; ?></li>
+    </ul>
+  </div>
+    
   <div class="container" style="margin-top: 30px">
-    <?php foreach ($detail as $key => $value) { ?>
+   
     <div class="col-sm-1">
-    <img href="#" src="<?php echo $value['b_img1']; ?>" height="80px" width="80px" class="side"><br><br>
-    <img href="#" src="<?php echo $value['b_img2']; ?>" height="80px" width="80px" class="side"><br><br>
-    <img href="#" src="<?php echo $value['b_img3']; ?>" height="80px" width="80px" class="side"><br><br>
-    <img href="#" src="<?php echo $value['b_img4']; ?>" height="80px" width="80px" class="side"><br><br>
+    
   </div>
   <div class="col-sm-1 ">
-    <img href="#" src="<?php echo $value['b_img']; ?>" height="500px" width="500px" class="main">
+    <img href="#" src="images/<?php echo $detail['b_img']; ?>" height="500px" width="500px" class="main">
   </div>
   <div class="col-sm-4" style="margin-left: 500px;font-family: Delius;font-size: 20px;color: #B0006D">
-    <div class="panel panel-danger">
-      <div class="panel-heading" style="text-align: center;"><b> <?php echo $value['b_name']; ?></b></div>
-      <div class="panel-body">
-          <li> Book ID: <?php echo $value['b_id']; ?></li><br>
-          <li> Book Description:<br> <p style="margin-left: 30px"><?php echo $value['b_des']; ?>
-          
-      </div>
-    </div>
+    
   </div>
 </div>
 
 
-<br><br><br><br>
+<br>
 <div class="container">
-  <ul class="nav nav-tabs col-sm-5" style="margin-left: 100px;font-size: 20px">
-      <li><a href="contact.php">About Us</a></li>
-    </ul>
+      <p style="margin-left:110px;font-size:17px"><b>Nội dung: </b><?php echo $detail['b_des']; ?></p>
   </div>
     
-  <?php } ?>
+
 </div>
   </div>
 </button>

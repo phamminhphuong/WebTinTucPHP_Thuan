@@ -159,28 +159,48 @@
         });
       </script>
       <?php if (isset($_SESSION['login_user'])) {
+          if($_SESSION['user_role']=='1'){
+      
           ?>
-      <a href="login.php" class="dropdown-toggle" data-toggle="dropdown">
-        <?php echo 'Hi, '.$_SESSION['login_user']."!"; ?>
+          <a href="login.php" class="dropdown-toggle" data-toggle="dropdown">
+            <?php echo 'Hi, '.$_SESSION['login_user']."!"; ?>
 
-        <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" style="font-size: 20px;font-family: Delius">
-          <li>
-            <a href="index.php">
-              <i class="fa fa-user-o"></i>&nbsp;My Account</a>
-          </li>
-          <li>
-            <a href="list.php">
-              <i class="fa fa-wrench"></i>&nbsp;Admin Functions</a>
-          </li>
-          <li>
-            <a href="logout.php">
-              <i class="fa fa-window-close-o"></i>&nbsp;Log out</a>
-          </li>
-        </ul>
-      </a>
-      <?php }else{ ?>
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" style="font-size: 20px;font-family: Delius">
+              <li>
+                <a href="index.php">
+                  <i class="fa fa-user-o"></i>&nbsp;My Account</a>
+              </li>
+              <li>
+                <a href="list.php">
+                  <i class="fa fa-wrench"></i>&nbsp;Admin Functions</a>
+              </li>
+              <li>
+                <a href="logout.php">
+                  <i class="fa fa-window-close-o"></i>&nbsp;Log out</a>
+              </li>
+            </ul>
+          </a>
+          <?php }else{ ?>
+              <a href="login.php" class="dropdown-toggle" data-toggle="dropdown">
+              <?php echo 'Hi, '.$_SESSION['login_user']."!"; ?>
+
+              <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" style="font-size: 20px;font-family: Delius">
+                <li>
+                  <a href="index.php">
+                    <i class="fa fa-user-o"></i>&nbsp;My Account</a>
+                </li>
+            
+                <li>
+                  <a href="logout.php">
+                    <i class="fa fa-window-close-o"></i>&nbsp;Log out</a>
+                </li>
+              </ul>
+            </a>
+      <?php }}else{ ?>
       <a href="login.php">Log In</a>
 
       <a href="register.php">Sign Up</a>

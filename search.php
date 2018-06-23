@@ -35,12 +35,16 @@ if(isset($_POST['search'])) {
 						<div class="row">
 							<?php
 							 foreach ($search as $sea => $value) { ?>
-								<div class="col-sm-3">
+								<div class="col-sm-4" style="text-align:center;margin-bottom:20px">
 									<a href="detail.php?id=<?php echo $value['b_id']?>">
-										<img src="images/<?php echo $value['b_img']; ?>" style="width:100px;height:170px">
+										<img src="images/<?php echo $value['b_img']; ?>" style="width:150px;height:200px">
 									</a>
+									<br>
 								</div>
+								
 								<?php } ?>
+						</div>
+						
 						</div>
 					</div>
 				</div>
