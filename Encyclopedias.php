@@ -26,7 +26,6 @@
             <a href="detail.php?id=<?php echo $value['b_id']?>">
             <img src="images/<?php echo $value['b_img']; ?>" class="img-circle" style="width:100%"></a></div>
           </div>
-      </div>
     </div>
     </div>
     <!-- Hien thi hang doc -->

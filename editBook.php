@@ -101,7 +101,6 @@ $id = $_GET['id'];
                 <label for="name">Book Name</label>
                 <input type="text" class="form-control" id="name" placeholder=" Enter Name" name="b_name" value="<?php echo $b_name; ?>">
             </div>
-            <div class="col-md-6">
               <div class="form-group">
                 <label for ="description"> Book Description</label>
                 <textarea  class="form-control" id="description" placeholder="Enter Product description" name="b_des"><?php echo $description; ?></textarea>

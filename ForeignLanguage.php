@@ -30,7 +30,6 @@
           </div>
       </div>
     </div>
-    </div>
     <!-- Hien thi hang doc -->
     <div class="doc" style="display: none;" >
         <div class="col-sm-10" style="margin-left: 150px">
