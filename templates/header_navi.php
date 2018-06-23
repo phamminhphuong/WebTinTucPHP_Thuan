@@ -84,14 +84,20 @@
 
     #searchId {
       width: 200px;
-
+      margin-top:15px;
+      
     }
     input::placeholder {
       font-family: Delius;
       color: #f4a892;
       font-size: "30";
     }
-
+    #btnSearch{
+      width:50px;
+      height:40px;
+      margin-left:-8px;
+      margin-top:-14px;
+    }
     div.jum {
       font-family: Delius!important;
     }
