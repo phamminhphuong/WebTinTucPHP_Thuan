@@ -1,3 +1,4 @@
+<html>
 <body>
   <?php
   include 'templates/header_navi.php';
